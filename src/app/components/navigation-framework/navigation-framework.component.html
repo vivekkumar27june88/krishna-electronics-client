@@ -1,0 +1,19 @@
+<div class="kec-main-window">
+
+    <mat-toolbar color="primary" class="kec-main-toolbar">
+        <kec-toolbar (menuBtnClicked)="kecMainToolbarMenuClicked()"></kec-toolbar>
+    </mat-toolbar>
+
+    <mat-sidenav-container>
+
+        <mat-sidenav [opened]="kecMainSidenavOpened" [mode]="kecMainSidenavMode" class="kec-main-sidenav">
+            <kec-main-sidenav></kec-main-sidenav>
+        </mat-sidenav>
+
+        <mat-sidenav-content class="kec-main-sidenav-content">
+            <kec-main-sidenav-content></kec-main-sidenav-content>
+        </mat-sidenav-content>
+
+    </mat-sidenav-container>
+
+</div>

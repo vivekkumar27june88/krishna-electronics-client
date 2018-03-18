@@ -1,0 +1,20 @@
+.kec-main-window {
+    min-height: 100vh;
+
+    .kec-main-toolbar{
+        height: 45px;
+    }
+
+    mat-sidenav-container {
+        min-height: calc(100vh - 45px);
+
+        .kec-main-sidenav {
+            width: 200px;
+
+        }
+
+        .kec-main-sidenav-content {
+            min-width: calc(100vw - 230px);
+        }
+    }
+}
