@@ -1,5 +1,6 @@
-<ul>
-    <li>Menu Item 1</li>
-    <li>Menu Item 2</li>
-    <li>Menu Item 3</li>
-</ul>
+<div fxLayout="column">
+    <div fxLayout="row" fxLayoutAlign="start center" class="menu-item" *ngFor="let menuItem of mainSidenavMenuitems">
+        <mat-icon>{{menuItem.svgIcon}}</mat-icon>
+        <span>{{menuItem.menuName}}</span>
+    </div>
+</div>
