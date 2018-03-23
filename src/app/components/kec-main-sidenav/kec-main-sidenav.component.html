@@ -1,6 +1,6 @@
 <div fxLayout="column">
-    <div fxLayout="row" fxLayoutAlign="start center" class="menu-item" *ngFor="let menuItem of mainSidenavMenuitems">
+    <a fxLayout="row" fxLayoutAlign="start center" class="menu-item" *ngFor="let menuItem of mainSidenavMenuitems" [routerLink]="['/products', menuItem.menuName]" routerLinkActive="menu-item--active">
         <mat-icon>{{menuItem.svgIcon}}</mat-icon>
         <span>{{menuItem.menuName}}</span>
-    </div>
+    </a>
 </div>
